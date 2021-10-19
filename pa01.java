@@ -99,6 +99,12 @@ public class pa01
         //Pads Plaintext Strings
         if(isPlaintext)
         {
+            if(finalData.length() > MAXSTRINGSIZE)
+            {
+                finalData = finalData.substring(0,MAXSTRINGSIZE);
+                return finalData;
+            }
+
             counter = finalData.length();
             while (counter < MAXSTRINGSIZE)
             {
