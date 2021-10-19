@@ -122,13 +122,13 @@ public class pa01
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String cipherText = "";
         int loop_index = 0, key_index = 0;
-        int cipher_index = 0;
 
         //Extends the key to fill the length of the plain text string
         while (key.length() < MAXSTRINGSIZE)
             key = key.concat(key);
 
 
+        int cipher_index;
         while (loop_index < MAXSTRINGSIZE)
         {
             int idex_1 = key.charAt(key_index++) - 97;
@@ -159,7 +159,7 @@ public class pa01
             System.out.print(key_copy[i]);
         }
 
-        System.out.println("\n\nPlaintext: \n");
+        System.out.println("\n\n\nPlaintext: \n");
         for(int i = 0; i < plain_copy.length; i++)
         {
             if(i != 0 && (i % 80) == 0)
@@ -168,7 +168,7 @@ public class pa01
             System.out.print(plain_copy[i]);
         }
 
-        System.out.println("\n\nCiphertext: \n");
+        System.out.println("\n\n\nCiphertext: \n");
         for(int i = 0; i < cipher_copy.length; i++)
         {
             if(i != 0 && (i % 80) == 0)
@@ -177,7 +177,7 @@ public class pa01
             System.out.print(cipher_copy[i]);
         }
 
-	System.out.println("\n\n");
+	System.out.println("");
     }
 }
 /*=============================================================================
