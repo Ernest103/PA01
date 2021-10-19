@@ -177,7 +177,7 @@ public class pa01
             System.out.print(cipher_copy[i]);
         }
 
-	System.out.println("");
+	System.out.println("\n\n");
     }
 }
 /*=============================================================================
